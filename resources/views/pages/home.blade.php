@@ -98,25 +98,25 @@
                 <div class="row row-cols-lg-4 row-cols-sm-4 row-cols-1 g-3 justify-content-center">
                     <div class="col">
                         <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white transation text-general hover-bg-primary h-100">
-                            <img class="lazyload" data-src="frontend/assets/img/dich-vu-1.png">
+                            <img alt='dịch vụ' class="lazyload" data-src="frontend/assets/img/dich-vu-1.png">
                             <h4>{{__('lang.dv11')}}</h4>
                         </a>
                     </div>
                     <div class="col">
                         <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white transation text-general hover-bg-primary h-100">
-                            <img class="lazyload" data-src="frontend/assets/img/dich-vu-2.png">
+                            <img alt='dịch vụ' class="lazyload" data-src="frontend/assets/img/dich-vu-2.png">
                             <h4>{{__('lang.dv12')}}</h4>
                         </a>
                     </div>
                     <div class="col">
                         <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white transation text-general hover-bg-primary h-100">
-                            <img class="lazyload" data-src="frontend/assets/img/dich-vu-3.png">
+                            <img alt='dịch vụ' class="lazyload" data-src="frontend/assets/img/dich-vu-3.png">
                             <h4>{{__('lang.dv13')}}</h4>
                         </a>
                     </div>
                     <div class="col">
                         <a href="#" class="text-center d-flex flex-column align-items-center hover-text-white transation text-general hover-bg-primary h-100">
-                            <img class="lazyload" data-src="frontend/assets/img/dich-vu-4.png">
+                            <img alt='dịch vụ' class="lazyload" data-src="frontend/assets/img/dich-vu-4.png">
                             <h4>{{__('lang.dv14')}}</h4>
                         </a>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="col-md-6">
                         <div class="entry-wrapper hover-img-zoom position-relative h-100">
                             <div class="overflow-hidden transation thumbnail-img">
-                                <img class="lazyload" data-src="frontend/assets/images/property/3.png" alt="real estate template">
+                                <img class="lazyload" data-src="frontend/assets/images/property/3.png" alt="{{$val->name}}">
                             </div>
                             <div class="d-flex position-absolute align-items-center bottom-0 p-4 w-100">
                                 <h5 class="mb-0"><a class="btn btn-white font-700 rounded-pill text-nowrap" href="#">{{$val->name}}</a></h5>
@@ -156,7 +156,7 @@
                     <div class="col-md-3">
                         <div class="entry-wrapper hover-img-zoom position-relative h-100">
                             <div class="overflow-hidden transation thumbnail-img">
-                                <img class="lazyload" data-src="frontend/assets/images/property/4.png" alt="real estate template">
+                                <img class="lazyload" data-src="frontend/assets/images/property/4.png" alt="{{$val->name}}">
                             </div>
                             <div class="d-flex position-absolute align-items-center bottom-0 p-4 w-100">
                                 <h5 class="transation"><a class="btn btn-white font-700 rounded-pill text-nowrap" href="#">{{$val->name}}</a></h5>
@@ -221,12 +221,11 @@
                         <div class="thumb-blog-overlay bg-white hover-text-PushUpBottom mb-4 border-radius-10">
                             <a href="{{$post_home->category->slug}}/{{$val->post->slug}}">
                                 <div class="post-image position-relative overlay-secondary">
-                                    <img class="lazyload" data-src="data/news/{{$val->post->img}}" alt="Image not found!">
+                                    <img class="lazyload" data-src="data/news/{{$val->post->img}}" alt="{{$val->name}}">
                                 </div>
                             </a>
                             <div class="post-content p-10">
                                 <h4 class="d-block font-400 mb-2 line-2"><a href="{{$post_home->category->slug}}/{{$val->post->slug}}" class="transation text-dark hover-text-primary">{{$val->name}}</a></h4>
-                                <!-- <p>Nostra maecenas malesuada vel lobortis sociis mus aliquam tempor etiam ipsum pretium cursus.</p> -->
                                 <div class="post-meta text-uppercase">
                                     <a href="#"><span>By: Admin</span></a>
                                     <a href="#"><span>Dec 25, 2019</span></a>

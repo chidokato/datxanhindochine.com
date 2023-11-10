@@ -53,6 +53,7 @@
     <link rel="stylesheet" href="frontend/assets/css/colors/color.css">
     <link rel="stylesheet" href="frontend/assets/css/loader.css">
     <link rel="stylesheet" href="frontend/assets/css/custom.css">
+    <link rel="stylesheet" href="frontend/assets/css/responsive.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- animation -->
 

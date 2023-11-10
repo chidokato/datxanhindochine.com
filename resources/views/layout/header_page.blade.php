@@ -35,15 +35,15 @@
                                 <li class="nav-item dropdown lang_icon">
                                     <a class="nav-link dropdown-toggle" >
                                         <?php 
-                                            if(Session::get('locale')=='vi'){ echo "<img alt='languge vi' src='data/home/vn-1x.webp'> VI"; }
-                                            if(Session::get('locale')=='en'){ echo "<img alt='languge en' src='data/home/gb-1x.webp'> EN"; }
-                                            if(Session::get('locale')=='cn'){ echo "<img alt='languge cn' src='data/home/cn-1x.webp'> CN"; }
+                                            if(Session::get('locale')=='vi'){ echo "<img alt='languge vi' alt='language' src='data/home/vn-1x.webp'> VI"; }
+                                            if(Session::get('locale')=='en'){ echo "<img alt='languge en' alt='language' src='data/home/gb-1x.webp'> EN"; }
+                                            if(Session::get('locale')=='cn'){ echo "<img alt='languge cn' alt='language' src='data/home/cn-1x.webp'> CN"; }
                                         ?>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{url('lang/vi')}}"> <img alt="languge vi" src="data/home/vn-1x.webp"> VI</a></li>
-                                        <li><a class="dropdown-item" href="{{url('lang/en')}}"> <img alt="languge en" src="data/home/gb-1x.webp"> EN</a></li>
-                                        <li><a class="dropdown-item" href="{{url('lang/cn')}}"> <img alt="languge cn" src="data/home/cn-1x.webp"> CN</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/vi')}}"> <img alt="languge vi" alt='language' src="data/home/vn-1x.webp"> VI</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/en')}}"> <img alt="languge en" alt='language' src="data/home/gb-1x.webp"> EN</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/cn')}}"> <img alt="languge cn" alt='language' src="data/home/cn-1x.webp"> CN</a></li>
                                     </ul>
                                 </li>
                             </ul>

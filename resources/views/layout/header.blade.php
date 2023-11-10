@@ -35,15 +35,15 @@
                                 <li class="nav-item dropdown lang_icon">
                                     <a class="nav-link dropdown-toggle" >
                                         <?php 
-                                            if(Session::get('locale')=='vi'){ echo "<img class='lazyload' data-src='data/home/vn-1x.webp'> VI"; }
-                                            if(Session::get('locale')=='en'){ echo "<img class='lazyload' data-src='data/home/gb-1x.webp'> EN"; }
-                                            if(Session::get('locale')=='cn'){ echo "<img class='lazyload' data-src='data/home/cn-1x.webp'> CN"; }
+                                            if(Session::get('locale')=='vi'){ echo "<img class='lazyload' alt='language' data-src='data/home/vn-1x.webp'> VI"; }
+                                            if(Session::get('locale')=='en'){ echo "<img class='lazyload' alt='language' data-src='data/home/gb-1x.webp'> EN"; }
+                                            if(Session::get('locale')=='cn'){ echo "<img class='lazyload' alt='language' data-src='data/home/cn-1x.webp'> CN"; }
                                         ?>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{url('lang/vi')}}"> <img class='lazyload' data-src="data/home/vn-1x.webp"> VI</a></li>
-                                        <li><a class="dropdown-item" href="{{url('lang/en')}}"> <img class='lazyload' data-src="data/home/gb-1x.webp"> EN</a></li>
-                                        <li><a class="dropdown-item" href="{{url('lang/cn')}}"> <img class='lazyload' data-src="data/home/cn-1x.webp"> CN</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/vi')}}"> <img class='lazyload' alt='language' data-src="data/home/vn-1x.webp"> VI</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/en')}}"> <img class='lazyload' alt='language' data-src="data/home/gb-1x.webp"> EN</a></li>
+                                        <li><a class="dropdown-item" href="{{url('lang/cn')}}"> <img class='lazyload' alt='language' data-src="data/home/cn-1x.webp"> CN</a></li>
                                     </ul>
                                 </li>
                             </ul>

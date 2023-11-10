@@ -15,7 +15,7 @@ class MainController extends Controller
     public function index()
     {
         // echo "trang chủ admin";
-        return view('admin.layout.main');
+        return view('admin.layout.index');
     }
 
     /**
