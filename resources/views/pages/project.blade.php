@@ -4,6 +4,7 @@
 @section('description') {{$post->description ? $post->description : $post->name.$post->name}} @endsection
 @section('robots') index, follow @endsection
 @section('url'){{asset('')}}@endsection
+@section('img'){{asset('')}}data/product{{$post->img}}@endsection
 
 @section('css')
 <style type="text/css">
