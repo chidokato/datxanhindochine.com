@@ -7,8 +7,8 @@
 
 @section('content')
 <div id="page_wrapper" class="bg-white">
-    @include('layout.header')
-        <div class="full-row p-0 overflow-hidden bg-light">
+    <!-- @include('layout.header') -->
+        <!-- <div class="full-row p-0 overflow-hidden bg-light">
             <div class="owl-carousel owl-theme home_slider">
                 @foreach($slider as $key => $val)
                 <div class="item"><img alt="slide" src="data/home/{{$val->slider->img}}"></div>
@@ -47,11 +47,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- =============== Counting ================-->
 
         <!--============== Recent Property Start ==============-->
-        <div class="full-row bg-light project-home">
+        <!-- <div class="full-row bg-light project-home">
             <div class="container">
                 <div class="row">
                     <div class="col mb-4">
@@ -83,7 +83,7 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--============== Recent Property End ==============-->
 
         <!--============== Property Category Start ==============-->

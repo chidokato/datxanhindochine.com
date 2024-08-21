@@ -82,7 +82,7 @@
         <div class="loader xy-center"></div>
     </div> -->
 
-    <!-- @yield('content') -->
+    @yield('content')
     <!-- Javascript Files -->
     <script src="frontend/assets/js/jquery.min.js"></script>
     <script src="frontend/assets/js/greensock.js"></script>
