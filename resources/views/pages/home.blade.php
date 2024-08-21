@@ -87,7 +87,7 @@
         <!--============== Recent Property End ==============-->
 
         <!--============== Property Category Start ==============-->
-        <div class="full-row bg-secondary secondary ">
+        <!-- <div class="full-row bg-secondary secondary ">
             <div class="container">
                 <div class="row">
                     <div class="col mb-5">
@@ -123,7 +123,7 @@
                     
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--============== Property Category End ==============-->
 
 
