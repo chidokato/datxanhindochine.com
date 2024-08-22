@@ -4432,6 +4432,7 @@ Newsletter Style
 .location-style-1 .thumbnail-img img{
     width: auto;
     height: 100%;
+    object-fit: cover;
 }
 
 
