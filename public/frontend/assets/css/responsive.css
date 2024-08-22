@@ -34,4 +34,7 @@
     .header-style-1 .nav-primary-hover .navbar-nav .active>.nav-link{color: #000 !important;}
     .banner-search-form{ display:none; }
     .project-home h2{ font-size:1.5rem }
+    .menuproject{ display:none; }
+    .project .owl-carousel .owl-item img{ height:270px }
+    .navigation-thumbs .owl-item img{ height:45px !important }
 }
