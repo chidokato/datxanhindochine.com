@@ -15,6 +15,11 @@ class ProvinceTranslation extends Model
     	'locale',
     ];
 
+    public function Province()
+    {
+        return $this->hasOne(Province::class, 'id', 'province_id');
+    }
+    
     public function DistrictTranslation()
     {
         return $this->hasMany(DistrictTranslation::class, 'province_id', 'id');

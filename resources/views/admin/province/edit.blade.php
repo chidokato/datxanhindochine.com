@@ -3,7 +3,7 @@
 @section('content')
 @include('admin.alert')
 
-<form method="post" action="{{route('province.update', [$id])}}">
+<form method="post" action="{{route('province.update', [$id])}}" enctype="multipart/form-data">
 @csrf
 @method('PUT')
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow fixed">
@@ -47,6 +47,25 @@
             </div>
         </div>
     </div>
+
+    <div class="col-xl-3 col-lg-3">
+          <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Images</h6>
+            </div>
+            <div class="card-body">
+                <div class="file-upload">
+                    <div class="file-upload-content" onclick="$('.file-upload-input').trigger( 'click' )">
+                        <img class="file-upload-image" src="{{ isset($province) ? 'data/images/'.$province->img : 'data/no_image.jpg' }}" />
+                    </div>
+                    <div class="image-upload-wrap">
+                        <input name="img" class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
     
 </div>
 </form>

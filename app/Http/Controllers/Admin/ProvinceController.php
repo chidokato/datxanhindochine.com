@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Session;
+use Image;
+use File;
 
 use App\Models\Province;
 use App\Models\ProvinceTranslation;
@@ -82,7 +84,12 @@ class ProvinceController extends Controller
     public function edit($id)
     {
         $data = ProvinceTranslation::where('province_id', $id)->get();
-        return view('admin.province.edit', compact('data', 'id'));
+        $province = Province::find($id);
+        return view('admin.province.edit', compact(
+            'province',
+            'data',
+            'id',
+        ));
     }
 
     /**
@@ -101,8 +108,20 @@ class ProvinceController extends Controller
                 $data->save();
             }
         }
+
+        $Province = Province::find($id);
+        if ($request->hasFile('img')) {
+            if(File::exists('data/images/'.$Province->img)) { File::delete('data/images/'.$Province->img);} // xóa ảnh cũ
+            $file = $request->file('img');
+            $filename = $file->getClientOriginalName();
+            while(file_exists("data/images/".$filename)){$filename = rand(0,99)."_".$filename;}
+            $file->move('data/images', $filename);
+            $Province->img = $filename;
+        }
+        $Province->save();
         
-        return redirect('admin/province')->with('success','updated successfully');
+        // return redirect('admin/province')->with('success','updated successfully');
+        return redirect()->back();
     }
 
     /**

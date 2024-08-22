@@ -22,4 +22,9 @@ class Province extends Model
     	'user_id',
     	'status',
     ];
+
+    public function DistrictTranslation()
+    {
+        return $this->hasMany(DistrictTranslation::class, 'province_id', 'id');
+    }
 }

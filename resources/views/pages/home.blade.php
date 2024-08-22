@@ -144,7 +144,7 @@
                     <div class="col-md-6">
                         <div class="entry-wrapper hover-img-zoom position-relative h-100">
                             <div class="overflow-hidden transation thumbnail-img">
-                                <img class="lazyload" data-src="frontend/assets/images/property/3.png" alt="{{$val->name}}">
+                                <img class="lazyload" data-src="data/images/{{$val->Province->img}}" alt="{{$val->name}}">
                             </div>
                             <div class="d-flex position-absolute align-items-center bottom-0 p-4 w-100">
                                 <h5 class="mb-0"><a class="btn btn-white font-700 rounded-pill text-nowrap" href="#">{{$val->name}}</a></h5>
