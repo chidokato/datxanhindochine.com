@@ -107,7 +107,7 @@
             
         </ul>
         <ul>
-            <li><a class="hotline" href="tel:1800646428"><i class="fa fa-phone"></i> 1800.64.64.28</a></li>
+            <li><a class="hotline" href="tel:{{$setting->hotline}}"><i class="fa fa-phone"></i> {{$setting->hotline}}</a></li>
         </ul>
     </div>
 </div>

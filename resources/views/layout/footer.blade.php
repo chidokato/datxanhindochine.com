@@ -25,7 +25,7 @@
                         <li><b>Trụ sở chính</b>: Tầng 5, tòa nhà Vạn Gia Phát, Số 1 Trần Khánh Dư, Phường Tân Định, Quận 1, Thành phố Hồ Chí Minh</li>
                         <li><b>Văn Phòng Hà Nội</b>: Tầng 1, toà CT4-Vimeco (cạnh siêu thị Vinmart), Nguyễn Chánh, P. Trung Hoà Nhân Chính, Q. Cầu Giấy, HN</li>
                         <li><b>Email</b>: datxanhindochine@dxmb.vn</li>
-                        <li><b>Hotline</b>: <a href="tel:1800646428">1800.64.64.28</a></li>
+                        <li><b>Hotline</b>: <a href="tel:{{$setting->hotline}}">{{$setting->hotline}}</a></li>
                     </ul>
                 </div>
             </div>
