@@ -133,7 +133,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="text-secondary text-center mb-5">
-                            <h2 class="text-secondary mx-auto mb-4">{{__('lang.ttbds')}} ád</h2>
+                            <h2 class="text-secondary mx-auto mb-4">{{__('lang.ttbds')}}</h2>
                             <!-- <span class="d-table w-50 w-sm-100 sub-title mx-auto text-center">Mauris primis turpis Laoreet magna felis mi amet quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span> -->
                         </div>
                     </div>

@@ -57,7 +57,7 @@
                                 <td class="line-height">
                                     <label class="container"><input <?php if($post->status == 'true'){echo "checked";} ?> type="checkbox" id='status_cat' ><span class="checkmark"></span></label>
                                 </td>
-                                <td class="line-height">Admin</td>
+                                <td class="line-height">{{$post->User->yourname}}</td>
                                 <td class="line-height">{{$post->sort_by}}</td>
                                 <td>
                                     @foreach($post->PostTranslation as $key => $val)
