@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
-                        <a class="navbar-brand" href="{{asset('')}}"><img class="nav-logo" src="frontend/assets/img/logo_bg.png" alt="logo indochine"></a>
+                        <a class="navbar-brand" href="{{asset('')}}"><img class="nav-logo" src="data/home/logo_-01.png" alt="logo indochine"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
                           </button>

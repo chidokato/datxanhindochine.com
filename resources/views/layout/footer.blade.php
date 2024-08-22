@@ -5,7 +5,7 @@
             <div class="col">
                 <div class="footer-widget mb-4">
                     <div class="footer-logo mb-4">
-                        <a href="#"><img class="lazyload" data-src="frontend/assets/img/logo.png" alt="Bất Động Sản Indochine" /></a>
+                        <a href="#"><img class="lazyload" data-src="data/home/{{$setting->img}}" alt="Bất Động Sản Indochine" /></a>
                     </div>
                     <p>Thành viên của <b>ĐẤT XANH MIỀN BẮC</b></p>
                     <p>Đơn vị phân phối và cho thuê bất động sản hàng đầu Việt Nam</p>

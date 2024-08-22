@@ -4172,7 +4172,6 @@ Newsletter Style
 }
 
 .footer-logo {
-    height: 50px
 }
 
 .footer-widget .widget-title {
@@ -5501,7 +5500,7 @@ Newsletter Style
         position: absolute
     }
     img.nav-logo {
-        width: 100px;
+        width: 45px;
     }
     .blue100 {
         padding: 30px !important

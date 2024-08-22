@@ -60,6 +60,7 @@ class HomeController extends Controller
 
         return view('pages.home', compact(
             'category',
+            'setting',
             'slider',
             'post_home',
             'search_cat',
@@ -71,22 +72,26 @@ class HomeController extends Controller
     public function about()
     {
         $locale = App::currentLocale();
+        $setting = SettingTranslation::where('locale', $locale)->first();
         $category = CategoryTranslation::join('categories', 'categories.id', '=', 'category_translations.category_id')
             ->where('locale', $locale)->where('parent', 0)
             ->select('category_translations.*')->orderBy('categories.view', 'asc')->get();
         return view('pages.about', compact(
             'category',
+            'setting',
         ));
     }
 
     public function contact()
     {
         $locale = App::currentLocale();
+        $setting = SettingTranslation::where('locale', $locale)->first();
         $category = CategoryTranslation::join('categories', 'categories.id', '=', 'category_translations.category_id')
             ->where('locale', $locale)->where('parent', 0)
             ->select('category_translations.*')->orderBy('categories.view', 'asc')->get();
         return view('pages.contact', [
             'category'=>$category,
+            'setting'=>$setting,
         ]);
     }
 
@@ -103,6 +108,7 @@ class HomeController extends Controller
     public function category($slug)
     {
         $locale = App::currentLocale();
+        $setting = SettingTranslation::where('locale', $locale)->first();
         $category = CategoryTranslation::join('categories', 'categories.id', '=', 'category_translations.category_id')
             ->where('locale', $locale)->where('parent', 0)
             ->select('category_translations.*')->orderBy('categories.view', 'asc')->get();
@@ -126,6 +132,7 @@ class HomeController extends Controller
                 ->where('locale', $locale)
                 ->orderBy('id', 'desc')->paginate(18);
             return view('pages.category', compact(
+                'setting',
                 'category',
                 'data',
                 'post'
@@ -138,6 +145,7 @@ class HomeController extends Controller
                 'category',
                 'data',
                 'post',
+                'setting',
             ));
         }
     }
@@ -145,6 +153,7 @@ class HomeController extends Controller
     public function post($catslug, $slug)
     {
         $locale = App::currentLocale();
+        $setting = SettingTranslation::where('locale', $locale)->first();
         $category = CategoryTranslation::join('categories', 'categories.id', '=', 'category_translations.category_id')
             ->where('locale', $locale)->where('parent', 0)
             ->select('category_translations.*')->orderBy('categories.view', 'asc')->get(); //menu
@@ -165,6 +174,7 @@ class HomeController extends Controller
             $images = Images::where('post_id', $post->post->id)->get();
             $section = SectionTranslation::where('locale', $locale)->where('post_id', $post->post->id)->orderBy('view', 'asc')->get();
             return view('pages.project', compact(
+                'setting',
                 'category',
                 'post',
                 'images',
@@ -174,6 +184,7 @@ class HomeController extends Controller
             ));
         }elseif ($post->post->sort_by == 'News') {
             return view('pages.post', compact(
+                'setting',
                 'category',
                 'post',
                 'catslug',
