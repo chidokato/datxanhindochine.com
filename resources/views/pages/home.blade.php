@@ -133,7 +133,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="text-secondary text-center mb-5">
-                            <h2 class="text-secondary mx-auto mb-4">{{__('lang.ttbds')}}</h2>
+                            <h2 class="text-secondary mx-auto mb-4">{{__('lang.ttbds')}} ád</h2>
                             <!-- <span class="d-table w-50 w-sm-100 sub-title mx-auto text-center">Mauris primis turpis Laoreet magna felis mi amet quam enim curae. Sodales semper tempor dictum faucibus habitasse.</span> -->
                         </div>
                     </div>
@@ -180,12 +180,12 @@
                     <div class="col-lg-7 text-white">
                         <h3 class="text-white mb-3">{{__('lang.text7')}}</h3>
                         <p>{{__('lang.text8')}}</p>
-                        <span class="h6 d-inline-block text-white">{{__('lang.Hotline')}}: 1800 6464 28</span>
+                        <span class="h6 d-inline-block text-white">{{__('lang.Hotline')}}: {{$setting->hotline}}</span>
                     </div>
                     <div class="col-lg-5">
                         <div class="simple-video-play d-flex">
                             <div class="position-relative d-inline-block">
-                                <a data-fancybox href="https://www.youtube.com/watch?v=N5dT2TztcHg&t" class="rounded-circle position-relative bg-primary" style="z-index: 10"><i class="flaticon-play-button position-relative xy-center flat-mini rounded-circle text-white"></i></a>
+                                <a data-fancybox href="https://www.youtube.com/watch?v=96d9V4dswa4" class="rounded-circle position-relative bg-primary" style="z-index: 10"><i class="flaticon-play-button position-relative xy-center flat-mini rounded-circle text-white"></i></a>
                                 <div class="loader position-absolute xy-center">
                                     <div class="loader-inner ball-scale-multiple">
                                         <div class="bg-primary"></div>
